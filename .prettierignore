@@ -1,0 +1,14 @@
+.node-cache/
+.jest/
+.vscode/
+.meteor/
+coverage/
+dist/
+package-lock.json
+node_modules/
+lerna.json
+.history/
+
+packages/*/prisma/client/
+packages/*/prisma/migrations/
+packages/*/api/

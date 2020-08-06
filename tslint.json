@@ -1,0 +1,25 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended", "tslint-config-clean-code"],
+    "compilerOptions": {
+        "noImplicitAny": false
+    },
+    "linterOptions": {
+        "exclude": ["dist/*", "**/*.json", "**/*.jsx", "**/*.js"]
+    },
+    "rules": {
+        "max-func-body-length": false,
+        "no-string-literal": false,
+        "no-import-side-effect": false,
+        "naming-convention": "PascalCase",
+        "max-union-size": [true, 4],
+        "no-implicit-dependencies": false,
+        "no-default-import": false,
+        "match-default-export-name": false,
+        "jsx-no-lambda": false,
+        "react-this-binding-issue": false,
+        "no-magic-numbers": false,
+        "no-parameter-properties": false,
+        "await-promise": false
+    }
+}
