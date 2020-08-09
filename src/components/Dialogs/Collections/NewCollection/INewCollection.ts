@@ -1,3 +1,5 @@
 export interface INewCollection {
-    // TODO: Setting up the props
+    title: string;
+    coverPhotoUrl?: string;
+
 }

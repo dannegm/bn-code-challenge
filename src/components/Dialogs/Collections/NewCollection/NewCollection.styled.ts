@@ -20,7 +20,7 @@ export const Title = styled.h1`
     font-weight: 400;
 `;
 
-export const Button = styled(MuiButton)`
+export const CollectionButton = styled(MuiButton)`
     margin: 2rem;
     background-color: ${palette.primary.main} !important;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);

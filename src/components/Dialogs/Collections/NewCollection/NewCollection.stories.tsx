@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 import { NewCollection } from './NewCollection';
 import Notes from './NewCollection.notes.md';
@@ -11,7 +11,16 @@ export default {
 };
 
 export const Basic = () => {
-    return <NewCollection />;
+
+    const knobsProps = {
+        title: text('Title:', 'New Collection Popup'),
+        coverPhotoUrl: text('Cover Photo URL', 'https://via.placeholder.com/150')
+    };
+    
+
+    return (
+        <NewCollection {...knobsProps}/>
+    );
 };
 
 Basic.story = {
