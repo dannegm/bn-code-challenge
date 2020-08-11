@@ -1,12 +1,12 @@
 import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import { NewCollection } from './NewCollection';
-import Notes from './NewCollection.notes.md';
+import { CollectionHeader } from './CollectionHeader';
+import Notes from './CollectionHeader.notes.md';
 
 export default {
-    title: 'Dialogs/New Collection',
-    component: NewCollection,
+    title: 'Dialogs/New Collection Header',
+    component: CollectionHeader,
     decorators: [withKnobs],
 };
 
@@ -19,7 +19,7 @@ export const Basic = () => {
         ),
     };
 
-    return <NewCollection {...knobsProps} />;
+    return <CollectionHeader {...knobsProps} />;
 };
 
 Basic.story = {
